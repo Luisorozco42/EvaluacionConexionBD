@@ -65,5 +65,11 @@
                android:hint="Ingrese el nombre de la pc"/>
        </com.google.android.material.textfield.TextInputLayout>
 
+       <Button
+           android:id="@+id/guardar"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:text="Guardar datos"/>
    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
