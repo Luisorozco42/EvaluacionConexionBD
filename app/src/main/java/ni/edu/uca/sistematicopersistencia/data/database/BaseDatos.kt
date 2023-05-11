@@ -4,12 +4,15 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import ni.edu.uca.sistematicopersistencia.data.database.dao.DonanteDao
 import ni.edu.uca.sistematicopersistencia.data.database.dao.ProductoDao
+import ni.edu.uca.sistematicopersistencia.data.database.entities.Donante
 import ni.edu.uca.sistematicopersistencia.data.database.entities.EntityProducto
 
-@Database(entities = [EntityProducto::class], version =1, exportSchema = false )
+@Database(entities = [EntityProducto::class], [Donante::class], version =1, exportSchema = false )
 abstract class BaseDatos: RoomDatabase(){
     abstract fun productoDao(): ProductoDao
+    abstract fun donanteDao(): DonanteDao
 
     companion object{
         @Volatile
