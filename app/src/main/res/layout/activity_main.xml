@@ -25,8 +25,8 @@
                android:id="@+id/etNombre"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:inputType= "numberDecimal"
-               android:hint="Ingrese el nombre de la pc"/>
+               android:inputType= "text"
+               android:hint="Ingrese el nombre del producto"/>
        </com.google.android.material.textfield.TextInputLayout>
 
        <TextView
@@ -43,8 +43,8 @@
                android:id="@+id/etPrecio"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:inputType= "number"
-               android:hint="Ingrese el nombre de la pc"/>
+               android:inputType= "numberDecimal"
+               android:hint="Ingrese el precio del producto"/>
        </com.google.android.material.textfield.TextInputLayout>
 
        <TextView
@@ -61,8 +61,8 @@
                android:id="@+id/etExistencia"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:inputType= "text"
-               android:hint="Ingrese el nombre de la pc"/>
+               android:inputType= "number"
+               android:hint="Ingrese la cantidad del producto en existencia"/>
        </com.google.android.material.textfield.TextInputLayout>
 
        <Button
