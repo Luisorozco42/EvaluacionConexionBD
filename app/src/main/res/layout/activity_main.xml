@@ -6,13 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sistematico Persistencia"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
 
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Nombre:"/>
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/etNombre"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType= "numberDecimal"
+               android:hint="Ingrese el nombre de la pc"/>
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Precio:"/>
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/etPrecio"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType= "number"
+               android:hint="Ingrese el nombre de la pc"/>
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Existencia:"/>
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/etExistencia"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType= "text"
+               android:hint="Ingrese el nombre de la pc"/>
+       </com.google.android.material.textfield.TextInputLayout>
+
+   </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
